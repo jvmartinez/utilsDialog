@@ -1,4 +1,5 @@
 <resources>
     <string name="btn_ok">Aceptar</string>
     <string name="btn_cancel">Cancelar</string>
+    <string name="text_message">Mensaje de notificacion</string>
 </resources>

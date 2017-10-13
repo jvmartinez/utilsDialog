@@ -1,9 +1,5 @@
 apply plugin: 'com.android.library'
-ext {
-    PUBLISH_GROUP_ID = 'com.jvmartinez.android'
-    PUBLISH_ARTIFACT_ID = 'utilsDialog'
-    PUBLISH_VERSION = '1.0'
-}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
@@ -12,18 +8,21 @@ android {
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
-        versionName PUBLISH_VERSION
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
-        debug {
+        release {
             minifyEnabled false
-            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
