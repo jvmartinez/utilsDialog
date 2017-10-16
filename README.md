@@ -53,9 +53,9 @@ Display only message to user
 1.4) The value 4 is for error message<br />
 ### example
 
-[![Dialog message](utilsDialog/img/dialogSimple.png)](utilsDialog/img/dialogSimple.png)
-[![Dialog Custom success](utilsDialog/img/CustomDialogButtonOk.png)](utilsDialog/img/CustomDialogButtonOk.png)
-[![Dialog Custom warning](utilsDialog/img/CustomDialog_buntonOk_Cancel.png)](utilsDialog/img/CustomDialog_buntonOk_Cancel.png)
+[![Dialog message](img%20/dialogSimple/dialogSimple.png)](img%20/dialogSimple/dialogSimple.png)
+[![Dialog Custom success](img%20/dialogCustom/CustomDialogButtonOk.png)](img%20/dialogCustom/CustomDialogButtonOk.png)
+[![Dialog Custom warning](img%20/dialogCustom/CustomDialog_buntonOk_Cancel.png)](img%20/dialogCustom/CustomDialog_buntonOk_Cancel.png)
 ## Contribution
  *Your contribution will help us to improve this project.*
 
