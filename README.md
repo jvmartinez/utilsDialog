@@ -45,7 +45,7 @@ Display only message to user
   </code>
 </pre>
 1) typeIco 
-1.1) The value 1 is for affirmative message
-1.2) The value 2 is for warning message
-1.3) The value 3 is for info message
-1.3) The value 4 is for error message
+> 1.1) The value 1 is for affirmative message
+> 1.2) The value 2 is for warning message
+> 1.3) The value 3 is for info message
+> 1.3) The value 4 is for error message
