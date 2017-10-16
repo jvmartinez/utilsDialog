@@ -1,5 +1,7 @@
 # utilsDialog
 It is a useful tool for dialogue.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/jvmartinez)
 # Configuration
 * Add repository 
 <pre>
@@ -49,3 +51,9 @@ Display only message to user
 1.2) The value 2 is for warning message<br />
 1.3) The value 3 is for info message<br />
 1.4) The value 4 is for error message<br />
+
+## Contribution
+ *Your contribution will help us to improve this project.*
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/jvmartinez)
+
