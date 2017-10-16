@@ -65,7 +65,7 @@ public class alertCustom extends DialogFragment {
         Button botonOk = (Button) view.findViewById(R.id.buttonOK);
         Button botonCancel = (Button) view.findViewById(R.id.buttonCancel);
         switch (this.typeIco){
-            case 0:{
+            case 4:{
                 this.ico_alert.setImageResource(R.drawable.forbidden);
                 break;
             }
