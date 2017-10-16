@@ -51,7 +51,11 @@ Display only message to user
 1.2) The value 2 is for warning message<br />
 1.3) The value 3 is for info message<br />
 1.4) The value 4 is for error message<br />
+### example
 
+[![Dialog message](img/dialogSimple.png)](img/dialogSimple.png)
+[![Dialog Custom success](img/CustomDialogButtonOk.png)](img/CustomDialogButtonOk.png)
+[![Dialog Custom warning](img/CustomDialog_buntonOk_Cancel.png)](img/CustomDialog_buntonOk_Cancel.png)
 ## Contribution
  *Your contribution will help us to improve this project.*
 
