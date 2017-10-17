@@ -2,7 +2,7 @@
 It is a useful tool for dialogue.
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/jvmartinez)
-# Configuration
+# Configuration gradle
 * Add repository 
 <pre>
   <code>
@@ -19,7 +19,7 @@ It is a useful tool for dialogue.
 <pre>
   <code>
   dependencies{
-	com.github.jvmartinez:utilsDialog:0.1.1
+	compile 'com.github.jvmartinez:utilsDialog:0.1.1'
 	}
   </code>
 </pre>
