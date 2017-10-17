@@ -19,7 +19,7 @@ It is a useful tool for dialogue.
 <pre>
   <code>
   dependencies{
-	compile 'com.github.jvmartinez:utilsDialog:0.1.1'
+	compile 'com.github.jvmartinez:utilsDialog:0.1.2'
 	}
   </code>
 </pre>
@@ -29,20 +29,20 @@ It is a useful tool for dialogue.
 Display only message to user
 <pre>
   <code>
-    alert.alert("Title","Message","Context");
+    alert.alert("Title","Message",Context);
   </code>
 </pre>
 * Dialog Simple with button
 <pre>
   <code>
-    alert.alert("Title","Message","onClickListenerOk","onClickListenerCancel","Context");
+    alert.alert("Title","Message","onClickListenerOk","onClickListenerCancel",Context);
   </code>
 </pre>
 * Dialog Custom 
 
 <pre>
   <code>
-    alertCustom custom = new alertCustom("Context","Title","Message","onClickListenerOk","onClickListenerCancel","typeIco");
+    alertCustom custom = new alertCustom(Context,"Title","Message","onClickListenerOk","onClickListenerCancel","typeIco");
     custom.openDialogo();
   </code>
 </pre>
