@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Library</string>
+    <string name="app_name">UtilsDialog</string>
     <string name="btn_ok">Ok</string>
     <string name="btn_cancel">Cancel</string>
     <string name="text_message">Message notification</string>

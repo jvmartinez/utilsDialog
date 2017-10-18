@@ -1,4 +1,4 @@
-package jvmartinez.com.mylibrary;
+package jvmartinez.com.utilsDialog;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
