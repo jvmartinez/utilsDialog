@@ -1,5 +1,6 @@
 package jvmartinez.com.utilsDialog;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
@@ -11,10 +12,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import jvmartinez.com.utilsDialog.Emun.TypeIco;
+
 /**
  * Created by Juan Martinez on 23/09/17.
  */
 
+@SuppressLint("ValidFragment")
 public class alertCustom extends DialogFragment {
     private AppCompatActivity activity;
     private String title;
@@ -24,10 +28,10 @@ public class alertCustom extends DialogFragment {
     private TextView lbl_message;
     private TextView lbl_title;
     private ImageView ico_alert;
-    private int typeIco;
+    private TypeIco typeIco;
     private int  typeDialog;
 
-    public alertCustom(AppCompatActivity activity, String title, String message, View.OnClickListener listenerOk, View.OnClickListener listenerCancel,int typeIco){
+    public alertCustom(AppCompatActivity activity, String title, String message, View.OnClickListener listenerOk, View.OnClickListener listenerCancel, TypeIco typeIco){
         this.activity = activity;
         this.title = title;
         this.message = message;
@@ -37,7 +41,7 @@ public class alertCustom extends DialogFragment {
         this.typeDialog = 0;
     }
 
-    public  alertCustom(AppCompatActivity activity, String title, String message, View.OnClickListener listenerOk,int typeIco){
+    public  alertCustom(AppCompatActivity activity, String title, String message, View.OnClickListener listenerOk,TypeIco typeIco){
         this.activity = activity;
         this.title = title;
         this.message = message;
@@ -64,7 +68,7 @@ public class alertCustom extends DialogFragment {
         builder.setView(view);
         Button botonOk = (Button) view.findViewById(R.id.buttonOK);
         Button botonCancel = (Button) view.findViewById(R.id.buttonCancel);
-        switch (this.typeIco){
+        switch (this.typeIco.getTypeico()){
             case 4:{
                 this.ico_alert.setImageResource(R.drawable.forbidden);
                 break;
