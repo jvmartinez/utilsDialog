@@ -19,7 +19,7 @@ It is a useful tool for dialogue.
 <pre>
   <code>
   dependencies{
-	com.github.jvmartinez:utilsDialog:0.1.1
+	com.github.jvmartinez:utilsDialog:0.1.3
 	}
   </code>
 </pre>
