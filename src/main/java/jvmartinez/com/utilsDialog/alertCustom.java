@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import junit.framework.Assert;
+
 import jvmartinez.com.utilsDialog.Emun.TypeIco;
 import jvmartinez.com.utilsDialog.Utils.Style;
 
@@ -115,7 +117,8 @@ public class alertCustom extends DialogFragment {
         this.setIcoNotification(this.typeIco);
 
         this.btnOk.setOnClickListener(this.onClickListenerOk);
-        this.btnCancel.setOnClickListener(this.onClickListenerCancel);
+        if(this.onClickListenerCancel != null)
+            this.btnCancel.setOnClickListener(this.onClickListenerCancel);
         this.UpdateStyle();
         return builder.create();
     }
@@ -159,14 +162,16 @@ public class alertCustom extends DialogFragment {
                         getContext().getResources().getColor(R.color.colorButtonBackground)
                 );
             }
-            if(this.style.getBtnCancelColor()>0){
-                this.btnCancel.setBackgroundColor(
+            if(this.style.getBtnCancelColor()>0 ){
+                if(this.onClickListenerCancel != null)
+                    this.btnCancel.setBackgroundColor(
                         activity.getResources().getColor(this.style.getBtnCancelColor())
-                );
+                    );
             }else{
-                this.btnCancel.setBackgroundColor(
+                if(this.onClickListenerCancel != null)
+                    this.btnCancel.setBackgroundColor(
                         getContext().getResources().getColor(R.color.colorButtonBackground)
-                );
+                    );
             }
             if(this.style.getTextTitle()>0){
                 this.lbl_title.setTextColor(
@@ -190,13 +195,15 @@ public class alertCustom extends DialogFragment {
                 this.btnOk.setTextColor(
                         activity.getResources().getColor(this.style.getTextColorButton())
                 );
-                this.btnCancel.setTextColor(
+                if(this.onClickListenerCancel != null)
+                    this.btnCancel.setTextColor(
                         activity.getResources().getColor(this.style.getTextColorButton())
-                );
+                    );
             }else{
-                this.btnCancel.setTextColor(
+                if(this.onClickListenerCancel != null)
+                    this.btnCancel.setTextColor(
                         getContext().getResources().getColor(R.color.colorTextBody)
-                );
+                    );
                 this.btnOk.setTextColor(
                         getContext().getResources().getColor(R.color.colorTextBody)
                 );
@@ -204,6 +211,9 @@ public class alertCustom extends DialogFragment {
         }
     }
 
+    private void UpdateStyle(int colorPrimaryDark, int colorAccent, int colorPrimary, int alert_btn_ok, int accent){
+
+    }
     private void setIcoNotification(TypeIco typeIco){
         switch (typeIco.getTypeico()){
             case 4:{
