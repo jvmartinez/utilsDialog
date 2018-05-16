@@ -2,7 +2,7 @@
 It is a useful tool for dialogue.
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/jvmartinez)
-# Configuration
+# Configuration gradle
 * Add repository 
 <pre>
   <code>
@@ -19,7 +19,7 @@ It is a useful tool for dialogue.
 <pre>
   <code>
   dependencies{
-	com.github.jvmartinez:utilsDialog:0.1.1
+	compile 'com.github.jvmartinez:utilsDialog:0.1.3'
 	}
   </code>
 </pre>
@@ -29,20 +29,20 @@ It is a useful tool for dialogue.
 Display only message to user
 <pre>
   <code>
-    alert.alert("Title","Message","Context");
+    alert.alert("Title","Message",Context);
   </code>
 </pre>
 * Dialog Simple with button
 <pre>
   <code>
-    alert.alert("Title","Message","onClickListenerOk","onClickListenerCancel","Context");
+    alert.alert("Title","Message","onClickListenerOk","onClickListenerCancel",Context);
   </code>
 </pre>
 * Dialog Custom 
 
 <pre>
   <code>
-    alertCustom custom = new alertCustom("Context","Title","Message","onClickListenerOk","onClickListenerCancel","typeIco");
+    alertCustom custom = new alertCustom(Context,"Title","Message","onClickListenerOk","onClickListenerCancel","typeIco");
     custom.openDialogo();
   </code>
 </pre>
@@ -51,11 +51,50 @@ Display only message to user
 1.2) The value 2 is for warning message<br />
 1.3) The value 3 is for info message<br />
 1.4) The value 4 is for error message<br />
-### example
 
+* Dialog Custom Personalized
+<pre>
+<code>
+        Style style = new Style();
+        style.setBackgroundBody(R.color.colorBodyBackground);
+        style.setBackgroundContents(R.color.colorContentsBackground);
+        style.setBackgroundTitle(R.color.black);
+        style.setTextTitle(R.color.txt_title);
+        style.setTextBody(R.color.black);
+        style.setBtnOkColor(R.color.alert_btn_ok);
+        style.setBtnCancelColor(R.color.alert_btn_cancel);
+        style.setTextColorButton(R.color.colorButtonTextBackground);
+        style.setLayoutWindows(0);
+
+        alertCustom custom =
+                new alertCustom(
+                        MainActivity.this,
+                        "Custom dialog test",
+                        "Hello world, dialog with custom,",
+                        onClickListenerOk(),
+                        onClickListenerCancel(),
+                        TypeIco.ICON_INFO,
+                        style);
+        custom.openDialogo();
+</code>
+</pre>
+### example
+### *Dialog Traditional*
 [![Dialog message](img%20/dialogSimple/dialogSimple.png)](img%20/dialogSimple/dialogSimple.png)
+
+### *Dialog Custom*
 [![Dialog Custom success](img%20/dialogCustom/CustomDialogButtonOk.png)](img%20/dialogCustom/CustomDialogButtonOk.png)
 [![Dialog Custom warning](img%20/dialogCustom/CustomDialog_buntonOk_Cancel.png)](img%20/dialogCustom/CustomDialog_buntonOk_Cancel.png)
+
+### *Dialog Personalized*
+
+[![Dialog message](img%20/dialogCustom/dialog_defautl.png)](img%20/dialogCustom/dialog_defautl.png)
+[![Dialog message](img%20/dialogCustom/dialog_ultis_1.png)](img%20/dialogCustom/dialog_ultis_1.png)
+[![Dialog message](img%20/dialogCustom/dialog.png)](img%20/dialogCustom/dialog.png)
+
+1) style.setLayoutWindows<br /> 
+1.1) The value 0 custom traditional<br />
+1.2) The value 1 custom style windows<br />
 ## Contribution
  *Your contribution will help us to improve this project.*
 
