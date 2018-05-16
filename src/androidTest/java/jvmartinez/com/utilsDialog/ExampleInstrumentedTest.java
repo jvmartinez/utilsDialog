@@ -1,4 +1,4 @@
-package jvmartinez.com.mylibrary;
+package jvmartinez.com.utilsDialog;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

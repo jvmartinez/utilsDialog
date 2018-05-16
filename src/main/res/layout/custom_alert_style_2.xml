@@ -28,6 +28,14 @@
                 android:text="@string/lbl_title"
                 android:textColor="@color/colorTitleText"
                 android:textSize="14sp" />
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="3dp"
+                android:padding="8dp"
+                android:text="X"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -63,21 +71,12 @@
 
             <Button
                 android:id="@+id/buttonOK"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
                 android:textSize="14sp"
                 android:text="@string/btn_ok" />
-
-            <Button
-                android:id="@+id/buttonCancel"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
-                android:textSize="14sp"
-                android:text="@string/btn_cancel" />
         </LinearLayout>
 
     </LinearLayout>

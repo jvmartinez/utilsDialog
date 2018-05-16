@@ -63,21 +63,12 @@
 
             <Button
                 android:id="@+id/buttonOK"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
                 android:textSize="14sp"
                 android:text="@string/btn_ok" />
-
-            <Button
-                android:id="@+id/buttonCancel"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
-                android:textSize="14sp"
-                android:text="@string/btn_cancel" />
         </LinearLayout>
 
     </LinearLayout>
