@@ -88,7 +88,9 @@ Display only message to user
 
 ### *Dialog Personalized*
 
-
+[![Dialog message](img%20/dialogCustom/dialog_defautl.png)](img%20/dialogCustom/dialog_defautl.png)
+[![Dialog message](img%20/dialogCustom/dialog_ultis_1.png)](img%20/dialogCustom/dialog_ultis_1.png)
+[![Dialog message](img%20/dialogCustom/dialog_utils_0.png)](img%20/dialogCustom/dialog_utils_0.png)
 ## Contribution
  *Your contribution will help us to improve this project.*
 
