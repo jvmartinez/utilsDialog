@@ -62,7 +62,7 @@ Display only message to user
         style.setTextTitle(R.color.txt_title);
         style.setTextBody(R.color.black);
         style.setBtnOkColor(R.color.alert_btn_ok);
-        style.setBtnCancelColor(R.color.alert_btn_ok);
+        style.setBtnCancelColor(R.color.alert_btn_cancel);
         style.setTextColorButton(R.color.colorButtonTextBackground);
         style.setLayoutWindows(0);
 
@@ -72,7 +72,7 @@ Display only message to user
                         "Custom dialog test",
                         "Hello world, dialog with custom,",
                         onClickListenerOk(),
-                        onClickListenerCancel_1(),
+                        onClickListenerCancel(),
                         TypeIco.ICON_INFO,
                         style);
         custom.openDialogo();
@@ -91,6 +91,10 @@ Display only message to user
 [![Dialog message](img%20/dialogCustom/dialog_defautl.png)](img%20/dialogCustom/dialog_defautl.png)
 [![Dialog message](img%20/dialogCustom/dialog_ultis_1.png)](img%20/dialogCustom/dialog_ultis_1.png)
 [![Dialog message](img%20/dialogCustom/dialog.png)](img%20/dialogCustom/dialog.png)
+
+1) style.setLayoutWindows<br /> 
+1.1) The value 0 custom traditional<br />
+1.2) The value 1 custom style windows<br />
 ## Contribution
  *Your contribution will help us to improve this project.*
 
